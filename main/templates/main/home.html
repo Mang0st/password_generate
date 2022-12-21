@@ -1,0 +1,32 @@
+{% extends 'main/base.html'%}
+{% block title %}Generate Password{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Password genirator</h1>
+
+<form action="{% url 'password' %}">
+    <input type="number" name="length" class="form-select form-select-lg mb-3 text-center"
+        aria-label=".form-select-lg example" min="5" />
+    <div class="checkbox-group">
+        <div class="form-check form-switch">
+            <input type="checkbox" name="uppercase" class="form-check-input" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Uppercase</label>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" name="numbers" class="form-check-input" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Numbers</label>
+
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" name="special" class="form-check-input" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Special Characters</label>
+
+        </div>
+
+
+    </div>
+    <div class="text-center">
+        <input type="submit" value="Generate password" class="btn btn-primary ">
+    </div>
+</form>
+{% endblock %}

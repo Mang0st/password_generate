@@ -1,0 +1,20 @@
+.boxspase {
+    padding-bottom: 200px;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 200px;
+    gap: 2rem;
+}
+
+.btn-line {
+    flex-direction: row;
+}
+
+.btn {
+    margin-left: 25px;
+}
