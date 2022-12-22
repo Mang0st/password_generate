@@ -23,4 +23,3 @@ def password(request):
         thepassword += random.choice(characters)
 
     return render(request, 'main/password.html', {'password': thepassword})
-    print('hee')
